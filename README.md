@@ -4,7 +4,7 @@
 <a href="https://whatsapp.com/channel/0029VadqmtNA89MlYOW7Ep2n"><img src="https://img.shields.io/badge/WhatsApp Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&link=[https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20](https://whatsapp.com/channel/0029VaWrCuH35fLuVP2iCc2R)" /><br>
 <a href="https://t.me/Giddy_Tennor"><img src="https://img.shields.io/badge/Telegram-00FFFF?style=for-the-badge&logo=telegram&logoColor=white" />
 <a href="[[[https://whatsapp.com/channel/0029VadqmtNA89MlYOW7Ep2n](https://whatsapp.com/channel/0029VaWrCuH35fLuVP2iCc2R)](https://whatsapp.com/channel/0029VaWrCuH35fLuVP2iCc2R)]"><img src="https://img.shields.io/badge/WhatsApp Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://www.instagram.com/Maldives_mak?igsh=MzNlNGNkZWQ4Mg=="><img src="https://img.shields.io/badge/Instagram-A020F0?style=for-the-badge&logo=instagram&logoColor=white" />
+<a href="https://www.instagram.com/giddy_tennor_?igsh=YzZ0NDRoaXFxM2Zk=="><img src="https://img.shields.io/badge/Instagram-A020F0?style=for-the-badge&logo=instagram&logoColor=white" />
 </p>
 # Setup For Deployment 👇
 
