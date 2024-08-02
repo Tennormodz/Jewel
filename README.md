@@ -8,10 +8,10 @@
 </p>
 # Setup For Deployment 👇
 
-- FORK THE REPOSITORY [Here](https://github.com/Maldii14/Cheemsbot14/fork)
+- FORK THE REPOSITORY [Here](https://github.com/Tennormodz/Jewel/fork)
 
 ## `Generate Pair Code For Session`
-[![Xeon](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Xeon-PairCode)
+[![Jewel](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@GiddyTennor/Tennor-PairCode)
 
 ## ` BUILDPACKS`
 
@@ -31,8 +31,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 * Any text editor
 ## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/Maldii14/Cheemsbot14.git
-cd cheemsbot14
+git clone https://github.com/Tennormodz/Jewel.git
+cd Jewel
 
 npm start
 ```
@@ -48,8 +48,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/Maldii14/Cheemsbot14
-cd cheemsbot14
+git clone https://github.com/Tennormodz/Jewel
+cd Jewel bot
 yarn install
 npm start
 ```
@@ -61,8 +61,8 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagemagick
 apt install bash
-git clone https://github.com/Maldii14/Cheemsbot14
-cd cheemsbot14
+git clone https://github.com/Tennormodz/Jewel
+cd jewel bot
 npm start
 ```
 ## `For 24/7 Activation (Termux)`
