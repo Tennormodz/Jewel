@@ -1,6 +1,6 @@
 {
   "users": {
-    "254758732775@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "5748ef2731f9b0ab993964d915670166",
       "title": "Premium",
       "afkTime": -1,
@@ -11,7 +11,7 @@
       "limit": 1000,
       "totalLimit": 0
     },
-    "254757051225@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "51b5bea707a330943f3f5622ddccf7b8",
       "title": "Premium",
       "afkTime": -1,
@@ -22,7 +22,7 @@
       "limit": 1000,
       "totalLimit": 0
     },
-    "919402104403@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "42d9404996157ee8f33424778fed1808",
       "title": "Premium",
       "afkTime": -1,
@@ -33,7 +33,7 @@
       "limit": 1000,
       "totalLimit": 0
     },
-    "919485490229@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "b9cafccdf830015fbc7e39f1e3eda9f1",
       "title": "Premium",
       "afkTime": -1,
@@ -44,7 +44,7 @@
       "limit": 1000,
       "totalLimit": 0
     },
-    "919863061187@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "abd166c4c2f50a0cacf11384665e6029",
       "title": "User",
       "afkTime": -1,
@@ -55,7 +55,7 @@
       "limit": 100,
       "totalLimit": 0
     },
-    "918798190868@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "050293a020d7d4b3983ef6f1f2956e16",
       "title": "User",
       "afkTime": -1,
@@ -66,7 +66,7 @@
       "limit": 100,
       "totalLimit": 0
     },
-    "918798610640@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "973d5dbd2e0592ef1bc2bec6f29a3007",
       "title": "User",
       "afkTime": -1,
@@ -77,7 +77,7 @@
       "limit": 100,
       "totalLimit": 0
     },
-    "916297175943@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "b72a3be037e372fc3de699f6cd455f49",
       "title": "User",
       "afkTime": -1,
@@ -88,7 +88,7 @@
       "limit": 100,
       "totalLimit": 0
     },
-    "918927828445@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "8ac318d64a14a0698c7c018c22aeeece",
       "title": "User",
       "afkTime": -1,
@@ -99,7 +99,7 @@
       "limit": 100,
       "totalLimit": 0
     },
-    "917085760579@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "1653e2ca4fc57013e3588b9ed3ddcc25",
       "title": "User",
       "afkTime": -1,
@@ -110,7 +110,7 @@
       "limit": 100,
       "totalLimit": 0
     },
-    "2347025369036@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "8b83c2ba2539dec74f3bf33a87058ea2",
       "title": "User",
       "afkTime": -1,
@@ -121,7 +121,7 @@
       "limit": 100,
       "totalLimit": 0
     },
-    "254731584439@s.whatsapp.net": {
+    "254104245659@s.whatsapp.net": {
       "serialNumber": "52c92fe6779f5dfd2f00ae431e8b9895",
       "title": "User",
       "afkTime": -1,
@@ -158,6 +158,26 @@
   "database": {},
   "chats": {
     "120363047626537933@g.us": {
+      "badword": true,
+      "antiforeignnum": false,
+      "antibot": false,
+      "antiviewonce": true,
+      "antispam": false,
+      "antivirtex": false,
+      "antimedia": false,
+      "antiimage": false,
+      "antivideo": false,
+      "antiaudio": false,
+      "antipoll": false,
+      "antisticker": false,
+      "antilocation": false,
+      "antidocument": false,
+      "anticontact": false,
+      "antilink": true,
+      "antipromotion": true,
+      "antilinkgc": true
+    },
+    "916909137213@s.whatsapp.net": {
       "badword": false,
       "antiforeignnum": false,
       "antibot": false,
@@ -174,28 +194,8 @@
       "antidocument": false,
       "anticontact": false,
       "antilink": true,
-      "antipromotion": false,
+      "antipromotion": true,
       "antilinkgc": true
-    },
-    "916909137213@s.whatsapp.net": {
-      "badword": false,
-      "antiforeignnum": false,
-      "antibot": false,
-      "antiviewonce": false,
-      "antispam": false,
-      "antivirtex": false,
-      "antimedia": false,
-      "antiimage": false,
-      "antivideo": false,
-      "antiaudio": false,
-      "antipoll": false,
-      "antisticker": false,
-      "antilocation": false,
-      "antidocument": false,
-      "anticontact": false,
-      "antilink": false,
-      "antipromotion": false,
-      "antilinkgc": false
     },
     "6289529333847@s.whatsapp.net": {
       "badword": false,
@@ -487,11 +487,11 @@
       "about": {
         "bot": {
           "nick": "+91 94021 04403",
-          "alias": "Cheems Bot MD V13"
+          "alias": "Jewel Bug bot"
         },
         "owner": {
-          "nick": "Xeon Bot User",
-          "alias": "916909137213"
+          "nick": "Jewel Bot User",
+          "alias": "254104245659"
         }
       }
     },
@@ -501,28 +501,28 @@
       "online": false,
       "autosticker": false,
       "autodownload": false,
-      "autobio": false,
+      "autobio": true,
       "autoread": false,
       "autoblocknum": false,
       "onlyindia": false,
       "onlyindo": false,
       "onlygrub": false,
       "onlypc": false,
-      "autorecordtype": false,
+      "autorecordtype": true,
       "autorecord": false,
       "autotype": false,
       "watermark": {
         "packname": "Sticker By",
-        "author": "🦄드림 가이 Xeon\n\n+916909137213"
+        "author": "🦄드림 가이 Jewel\n\n+916909137213"
       },
       "about": {
         "bot": {
           "nick": "+91 94854 90229",
-          "alias": "Cheems Bot MD V13"
+          "alias": "Jewel bug bot"
         },
         "owner": {
-          "nick": "Xeon Bot User",
-          "alias": "916909137213"
+          "nick": "Jewel Bot User",
+          "alias": "254104245659"
         }
       }
     }
