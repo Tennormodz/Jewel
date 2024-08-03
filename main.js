@@ -1,10 +1,10 @@
-//base by DGXeon (Xeon Bot Inc.)
-//YouTube: @DGXeon
+//base by Goddy (Jewel Bot Inc.)
+//YouTube: @GiddyTennor
 //Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
+//Telegram: t.me/GiddyTennor
+//GitHub: @Tennormodz
+//WhatsApp: +254104245659
+//want more free bot scripts 😁? subscribe to my youtube Channel https://youtube.com/@gideonowino-gc2ry?si=5zCh-IZzv_JBMUyp
 
 require('./settings')
 const pino = require('pino')
@@ -64,12 +64,12 @@ if (global.db) setInterval(async () => {
    if (global.db.data) await global.db.write()
 }, 30 * 1000)
 
-require('./XeonCheems14.js')
-nocache('../XeonCheems14.js', module => console.log(color('[ CHANGE ]', 'green'), color(`'${module}'`, 'green'), 'Updated'))
+require('./Jewel.js')
+nocache('../Jewel.js', module => console.log(color('[ CHANGE ]', 'green'), color(`'${module}'`, 'green'), 'Updated'))
 require('./main.js')
 nocache('../main.js', module => console.log(color('[ CHANGE ]', 'green'), color(`'${module}'`, 'green'), 'Updated'))
 
-let phoneNumber = "916909137213"
+let phoneNumber = "254104245659"
 let owner = JSON.parse(fs.readFileSync('./src/data/role/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -83,7 +83,7 @@ async function startXeonBotInc() {
 let { version, isLatest } = await fetchLatestBaileysVersion()
 const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
     const msgRetryCounterCache = new NodeCache() // for retry message, "waiting message"
-    const XeonBotInc = makeWASocket({
+    const JewelBotInc = makeWASocket({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: !pairingCode, // popping up QR in terminal log
       browser: Browsers.windows('Firefox'), // for this issues https://github.com/WhiskeySockets/Baileys/issues/328
@@ -172,7 +172,7 @@ try{
 		if (connection === 'close') {
 			let reason = new Boom(lastDisconnect?.error)?.output.statusCode
 			if (reason === DisconnectReason.badSession) {
-				console.log(`Bad Session File, Please Delete Session and Scan Again`);
+				console.log(`Bad Session File, Please Delete this Session and Scan Again`);
 				startXeonBotInc()
 			} else if (reason === DisconnectReason.connectionClosed) {
 				console.log("Connection closed, reconnecting....");
@@ -184,14 +184,14 @@ try{
 				console.log("Connection Replaced, Another New Session Opened, Please Close Current Session First");
 				startXeonBotInc()
 			} else if (reason === DisconnectReason.loggedOut) {
-				console.log(`Device Logged Out, Please Delete Session and Scan Again.`);
+				console.log(`Your device was Logged Out, Please Delete Session and Scan Again.`);
 				startXeonBotInc();
 			} else if (reason === DisconnectReason.restartRequired) {
 				console.log("Restart Required, Restarting...");
 				startXeonBotInc();
 			} else if (reason === DisconnectReason.timedOut) {
-				console.log("Connection TimedOut, Reconnecting...");
-				startXeonBotInc();
+				console.log("Oops connection TimedOut, Reconnecting...");
+				startJewelBotInc();
 			} else XeonBotInc.end(`Unknown DisconnectReason: ${reason}|${connection}`)
 		}
 		if (update.connection == "connecting" || update.receivedPendingNotifications == "false") {
@@ -199,31 +199,33 @@ try{
 		}
 		if (update.connection == "open" || update.receivedPendingNotifications == "true") {
 			console.log(color(` `,'magenta'))
-            console.log(color(`🌿Connected to => ` + JSON.stringify(XeonBotInc.user, null, 2), 'yellow'))
+            console.log(color(`jewel🌿 bot connected to => ` + JSON.stringify(jewelBotInc.user, null, 2), 'yellow'))
             console.log(chalk.yellow(`\n\n               ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
             console.log(color(`< ================================================== >`, 'cyan'))
 	        console.log(color(`\n${themeemoji} YT CHANNEL: Xeon`,'magenta'))
             console.log(color(`${themeemoji} GITHUB: DGXeon `,'magenta'))
-            console.log(color(`${themeemoji} INSTAGRAM: @unicorn_xeon `,'magenta'))
+            console.log(color(`${themeemoji} INSTAGRAM: @giddy_tennor `,'magenta'))
             console.log(color(`${themeemoji} WA NUMBER: ${owner}`,'magenta'))
             console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
 		}
 	
 } catch (err) {
 	  console.log('Error in Connection.update '+err)
-	  startXeonBotInc()
+	  startZjewelBotInc()
 	}
 })
-XeonBotInc.ev.on('creds.update', saveCreds)
-XeonBotInc.ev.on("messages.upsert",  () => { })
+JewelBotInc.ev.on('creds.update', saveCreds)
+Xeon
+
+JewelBotInc.ev.on("messages.upsert",  () => { })
 //------------------------------------------------------
 
 //farewell/welcome
-    XeonBotInc.ev.on('group-participants.update', async (anu) => {
+    JewelBotInc.ev.on('group-participants.update', async (anu) => {
     	if (global.welcome){
 console.log(anu)
 try {
-let metadata = await XeonBotInc.groupMetadata(anu.id)
+let metadata = await JewelBotInc.groupMetadata(anu.id)
 let participants = anu.participants
 for (let num of participants) {
 try {
@@ -232,29 +234,29 @@ ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
 ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
 }
 try {
-ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
+ppgroup = await JewelBotInc.profilePictureUrl(anu.id, 'image')
 } catch (err) {
 ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 }
 //welcome\\
 memb = metadata.participants.length
-XeonWlcm = await getBuffer(ppuser)
-XeonLft = await getBuffer(ppuser)
+JewelWlcm = await getBuffer(ppuser)
+JewelLft = await getBuffer(ppuser)
                 if (anu.action == 'add') {
-                const xeonbuffer = await getBuffer(ppuser)
-                let xeonName = num
+                const jewelbuffer = await getBuffer(ppuser)
+                let jewelName = num
                 const xtime = moment.tz('Africa/Nairobi').format('HH:mm:ss')
 	            const xdate = moment.tz('Africa/Nairobi').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
-                xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「  @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
+                xeonbody = `∫∬─⁠.⁠─⁠|⁠|⁠□⁠
+│「 𝗛𝗶 👽 」
+└┬❖ 「  @${jewelName.split("@")[0]}  」
+   ┣┓  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+   ┣┓ ${metadata.subject}
+   ┣┓  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   ┣┓ ${xmembers}th
+   ┣┓  𝗝𝗼𝗶𝗻𝗲𝗱 : 
+   ┣┓ ${xtime} ${xdate}
    └───────────────┈ ⳹`
 let msgs = generateWAMessageFromContent(anu.id, {
   viewOnceMessage: {
@@ -272,7 +274,7 @@ let msgs = generateWAMessageFromContent(anu.id, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: XeonWlcm }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: jewelWlcm }, { upload: JewelBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -301,7 +303,7 @@ XeonBotInc.relayMessage(anu.id, msgs.message, {})
 	                const xeondate = moment.tz('Africa/Nairobi').format('DD/MM/YYYY')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
-                    xeonbody = `┌─❖
+                    jewelbody = `┌─❖
 │「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
 └┬❖ 「 @${xeonName.split("@")[0]}  」
    │✑  𝗟𝗲𝗳𝘁 
@@ -332,7 +334,7 @@ let msgs = generateWAMessageFromContent(anu.id, {
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
             "name": "quick_reply",
-              "buttonParamsJson": `{\"display_text\":\"Goodbye 👋\",\"id\":\"\"}`
+              "buttonParamsJson": `{\"display_text\":\"Goodbye we were not happy having you here 🥲\",\"id\":\"\"}`
             }],
           }),
           contextInfo: {
@@ -358,31 +360,31 @@ console.log(err)
 }
 })
 // Anti Call
-    XeonBotInc.ev.on('call', async (XeonPapa) => {
+    JewelBotInc.ev.on('call', async (JewelPapa) => {
     	if (global.anticall){
-    console.log(XeonPapa)
-    for (let XeonFucks of XeonPapa) {
-    if (XeonFucks.isGroup == true) {
-    if (XeonFucks.status == "offer") {
-    let XeonBlokMsg = await XeonBotInc.sendTextWithMentions(XeonFucks.from, `*${XeonBotInc.user.name}* can't receive ${XeonFucks.isVideo ? `video` : `voice` } call. Sorry @${XeonFucks.from.split('@')[0]} you will be blocked. If called accidentally please contact the owner to be unblocked !`)
-    XeonBotInc.sendContact(XeonFucks.from, owner, XeonBlokMsg)
+    console.log(JewelPapa)
+    for (let JewelFucks of XeonPapa) {
+    if (JewelFucks.isGroup == true) {
+    if (JewelFucks.status == "offer") {
+    let JewelBlokMsg = await JewelBotInc.sendTextWithMentions(XeonFucks.from, `*${JewelBotInc.user.name}* can't receive ${JewelFucks.isVideo ? `video` : `voice` } call. Sorry @${XeonFucks.from.split('@')[0]} you will be blocked. If called accidentally please contact the owner to be unblocked !`)
+    JewelBotInc.sendContact(JewelFucks.from, owner, JewelBlokMsg)
     await sleep(8000)
-    await XeonBotInc.updateBlockStatus(XeonFucks.from, "block")
+    await JewelBotInc.updateBlockStatus(JewelFucks.from, "block")
     }
     }
     }
     }
     })
     //autostatus view
-        XeonBotInc.ev.on('messages.upsert', async chatUpdate => {
+        JewelBotInc.ev.on('messages.upsert', async chatUpdate => {
         	if (global.antiswview){
             mek = chatUpdate.messages[0]
             if (mek.key && mek.key.remoteJid === 'status@broadcast') {
-            	await XeonBotInc.readMessages([mek.key]) }
+            	await JewelBotInc.readMessages([mek.key]) }
             }
     })
     //admin event
-    XeonBotInc.ev.on('group-participants.update', async (anu) => {
+    JewelBotInc.ev.on('group-participants.update', async (anu) => {
     	if (global.adminevent){
 console.log(anu)
 try {
@@ -394,17 +396,17 @@ ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
 ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
 }
 try {
-ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
+ppgroup = await JewelBotInc.profilePictureUrl(anu.id, 'image')
 } catch (err) {
 ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 }
  if (anu.action == 'promote') {
-const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-let xeonName = num
-xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, you have been *promoted* to *admin* 🥳`
-   XeonBotInc.sendMessage(anu.id,
- { text: xeonbody,
+const jeweltime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+const jeweldate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+let jewelName = num
+jewelbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${jewelName.split("@")[0]}, you have been successfully *promoted* to *admin* enjoy your rights🥳`
+   jewelBotInc.sendMessage(anu.id,
+ { text: jewelbody,
  contextInfo:{
  mentionedJid:[num],
  "externalAdReply": {"showAdAttribution": true,
@@ -413,15 +415,15 @@ xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, yo
 "body": `${ownername}`,
  "previewType": "PHOTO",
 "thumbnailUrl": ``,
-"thumbnail": XeonWlcm,
+"thumbnail": JewelWlcm,
 "sourceUrl": `${wagc}`}}})
 } else if (anu.action == 'demote') {
-const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-let xeonName = num
-xeonbody = `𝗢𝗼𝗽𝘀‼️ @${xeonName.split("@")[0]}, you have been *demoted* from *admin* 😬`
-XeonBotInc.sendMessage(anu.id,
- { text: xeonbody,
+const jeweltime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+const jeweldate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+let jewelName = num
+jewelbody = `𝗢𝗼𝗽𝘀🤣‼️ @${jewelName.split("@")[0]}, you have been *demoted* from *admin* but hio pia ni life😬`
+jewelBotInc.sendMessage(anu.id,
+ { text: jewelbody,
  contextInfo:{
  mentionedJid:[num],
  "externalAdReply": {"showAdAttribution": true,
@@ -441,10 +443,10 @@ console.log(err)
 })
 
 // detect group update
-		XeonBotInc.ev.on("groups.update", async (json) => {
+		JewelBotInc.ev.on("groups.update", async (json) => {
 			if (global.groupevent) {
 			try {
-ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
+ppgroup = await JewelBotInc.profilePictureUrl(anu.id, 'image')
 } catch (err) {
 ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 }
@@ -452,32 +454,32 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 			const res = json[0]
 			if (res.announce == true) {
 				await sleep(2000)
-				XeonBotInc.sendMessage(res.id, {
+				jewelBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\nGroup has been closed by admin, Now only admins can send messages !`,
 				})
 			} else if (res.announce == false) {
 				await sleep(2000)
-				XeonBotInc.sendMessage(res.id, {
+				jewelBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\nThe group has been opened by admin, Now participants can send messages !`,
 				})
 			} else if (res.restrict == true) {
 				await sleep(2000)
-				XeonBotInc.sendMessage(res.id, {
+				JewelBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\nGroup info has been restricted, Now only admin can edit group info !`,
 				})
 			} else if (res.restrict == false) {
 				await sleep(2000)
-				XeonBotInc.sendMessage(res.id, {
+				JewelBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\nGroup info has been opened, Now participants can edit group info !`,
 				})
 			} else if(!res.desc == ''){
 				await sleep(2000)
-				XeonBotInc.sendMessage(res.id, { 
+			  JewelBotInc.sendMessage(res.id, { 
 					text: `「 Group Settings Change 」\n\n*Group description has been changed to*\n\n${res.desc}`,
 				})
       } else {
 				await sleep(2000)
-				XeonBotInc.sendMessage(res.id, {
+				JewelBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\n*Group name has been changed to*\n\n*${res.subject}*`,
 				})
 			} 
@@ -491,10 +493,10 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
             return msg?.message
         }
         return {
-            conversation: "Cheems Bot Here!"
+            conversation: "Jewel Bot Here 😁!"
         }
     }
-    XeonBotInc.ev.on('messages.update', async chatUpdate => {
+    JewelBotInc.ev.on('messages.update', async chatUpdate => {
         for(const { key, update } of chatUpdate) {
 			if(update.pollUpdates && key.fromMe) {
 				const pollCreation = await getMessage(key)
@@ -506,29 +508,29 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 	                var toCmd = pollUpdate.filter(v => v.voters.length !== 0)[0]?.name
 	                if (toCmd == undefined) return
                     var prefCmd = xprefix+toCmd
-	                XeonBotInc.appenTextMessage(prefCmd, chatUpdate)
+	                JewelBotInc.appenTextMessage(prefCmd, chatUpdate)
 				}
 			}
 		}
     })
 
-    XeonBotInc.ev.on('messages.upsert', async chatUpdate => {
+    JewelBotInc.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
         try {
             const mek = chatUpdate.messages[0]
             if (!mek.message) return
             mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
             if (mek.key && mek.key.remoteJid === 'status@broadcast' )
-            if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
+            if (!JewelBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
             if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
-            const m = smsg(XeonBotInc, mek, store)
-            require("./XeonCheems14")(XeonBotInc, m, chatUpdate, store)
+            const m = smsg(JewelBotInc, mek, store)
+            require("./Jewelbugbot")(JewelBotInc, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
     })
    
-   XeonBotInc.decodeJid = (jid) => {
+   JewelBotInc.decodeJid = (jid) => {
         if (!jid) return jid
         if (/:\d+@/gi.test(jid)) {
             let decode = jidDecode(jid) || {}
@@ -538,7 +540,7 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 
     XeonBotInc.ev.on('contacts.update', update => {
         for (let contact of update) {
-            let id = XeonBotInc.decodeJid(contact.id)
+            let id = JewelBotInc.decodeJid(contact.id)
             if (store && store.contacts) store.contacts[id] = {
                 id,
                 name: contact.notify
@@ -546,47 +548,47 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
         }
     })
 
-    XeonBotInc.getName = (jid, withoutContact = false) => {
+    JewelBotInc.getName = (jid, withoutContact = false) => {
         id = XeonBotInc.decodeJid(jid)
-        withoutContact = XeonBotInc.withoutContact || withoutContact
+        withoutContact = JewelBotInc.withoutContact || withoutContact
         let v
         if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
             v = store.contacts[id] || {}
-            if (!(v.name || v.subject)) v = XeonBotInc.groupMetadata(id) || {}
+            if (!(v.name || v.subject)) v = JewelBotInc.groupMetadata(id) || {}
             resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
         })
         else v = id === '0@s.whatsapp.net' ? {
                 id,
                 name: 'WhatsApp'
-            } : id === XeonBotInc.decodeJid(XeonBotInc.user.id) ?
-            XeonBotInc.user :
+            } : id === JewelBotInc.decodeJid(XeonBotInc.user.id) ?
+            JewelBotInc.user :
             (store.contacts[id] || {})
         return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
 
-XeonBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
+JewelBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
 	let list = []
 	for (let i of kon) {
 	    list.push({
-	    	displayName: await XeonBotInc.getName(i),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i)}\nFN:${await XeonBotInc.getName(i)}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Mobile\nEND:VCARD`
+	    	displayName: await JewelBotInc.getName(i),
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await JewelBotInc.getName(i)}\nFN:${await JewelBotInc.getName(i)}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Mobile\nEND:VCARD`
 	    })
 	}
-	XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
+	JewelBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
     }
 
-    XeonBotInc.public = true
+    JewelBotInc.public = true
 
-    XeonBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
+    JewelBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
 
-    XeonBotInc.sendText = (jid, text, quoted = '', options) => XeonBotInc.sendMessage(jid, {
+    JewelBotInc.sendText = (jid, text, quoted = '', options) => XeonBotInc.sendMessage(jid, {
         text: text,
         ...options
     }, {
         quoted,
         ...options
     })
-    XeonBotInc.sendImage = async (jid, path, caption = '', quoted = '', options) => {
+    JewelBotInc.sendImage = async (jid, path, caption = '', quoted = '', options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,` [1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         return await XeonBotInc.sendMessage(jid, {
             image: buffer,
@@ -596,14 +598,14 @@ XeonBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
             quoted
         })
     }
-    XeonBotInc.sendTextWithMentions = async (jid, text, quoted, options = {}) => XeonBotInc.sendMessage(jid, {
+    JewelBotInc.sendTextWithMentions = async (jid, text, quoted, options = {}) => JewelBotInc.sendMessage(jid, {
         text: text,
         mentions: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net'),
         ...options
     }, {
         quoted
     })
-    XeonBotInc.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+    JewelBotInc.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
 let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
 let buffer
 if (options && (options.packname || options.author)) {
@@ -611,21 +613,21 @@ buffer = await writeExifImg(buff, options)
 } else {
 buffer = await imageToWebp(buff)
 }
-await XeonBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+await JewelBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
 .then( response => {
 fs.unlinkSync(buffer)
 return response
 })
 }
 
-XeonBotInc.sendAudio = async (jid, path, quoted = '', ptt = false, options) => {
+JewelBotInc.sendAudio = async (jid, path, quoted = '', ptt = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await XeonBotInc.sendMessage(jid, { audio: buffer, ptt: ptt, ...options }, { quoted })
+        return await JewelBotInc.sendMessage(jid, { audio: buffer, ptt: ptt, ...options }, { quoted })
     }
     
-    XeonBotInc.sendVideo = async (jid, path, caption = '', quoted = '', gif = false, options) => {
+    JewelBotInc.sendVideo = async (jid, path, caption = '', quoted = '', gif = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await XeonBotInc.sendMessage(jid, { video: buffer, caption: caption, gifPlayback: gif, ...options }, { quoted })
+        return await JewelBotInc.sendMessage(jid, { video: buffer, caption: caption, gifPlayback: gif, ...options }, { quoted })
     }
 
 XeonBotInc.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
@@ -636,10 +638,10 @@ buffer = await writeExifVid(buff, options)
 } else {
 buffer = await videoToWebp(buff)
 }
-await XeonBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+await JewelBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
 return buffer
 }
-    XeonBotInc.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
+    JewelBotInc.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
         let quoted = message.msg ? message.msg : message
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
@@ -655,29 +657,29 @@ return buffer
         return trueFileName
     }
     
-    XeonBotInc.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
+    JewelBotInc.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
       let mime = '';
       let res = await axios.head(url)
       mime = res.headers['content-type']
       if (mime.split("/")[1] === "gif") {
-     return XeonBotInc.sendMessage(jid, { video: await getBuffer(url), caption: caption, gifPlayback: true, ...options}, { quoted: quoted, ...options})
+     return JewelBotInc.sendMessage(jid, { video: await getBuffer(url), caption: caption, gifPlayback: true, ...options}, { quoted: quoted, ...options})
       }
       let type = mime.split("/")[0]+"Message"
       if(mime === "application/pdf"){
-     return XeonBotInc.sendMessage(jid, { document: await getBuffer(url), mimetype: 'application/pdf', caption: caption, ...options}, { quoted: quoted, ...options })
+     return JewelBotInc.sendMessage(jid, { document: await getBuffer(url), mimetype: 'application/pdf', caption: caption, ...options}, { quoted: quoted, ...options })
       }
       if(mime.split("/")[0] === "image"){
-     return XeonBotInc.sendMessage(jid, { image: await getBuffer(url), caption: caption, ...options}, { quoted: quoted, ...options})
+     return JewelBotInc.sendMessage(jid, { image: await getBuffer(url), caption: caption, ...options}, { quoted: quoted, ...options})
       }
       if(mime.split("/")[0] === "video"){
-     return XeonBotInc.sendMessage(jid, { video: await getBuffer(url), caption: caption, mimetype: 'video/mp4', ...options}, { quoted: quoted, ...options })
+     return JewelBotInc.sendMessage(jid, { video: await getBuffer(url), caption: caption, mimetype: 'video/mp4', ...options}, { quoted: quoted, ...options })
       }
       if(mime.split("/")[0] === "audio"){
-     return XeonBotInc.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options}, { quoted: quoted, ...options })
+     return JewelBotInc.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options}, { quoted: quoted, ...options })
       }
       }
       
-      XeonBotInc.getFile = async (PATH, save) => {
+      JewelBotInc.getFile = async (PATH, save) => {
         let res
         let data = Buffer.isBuffer(PATH) ? PATH : /^data:.*?\/.*?;base64,/i.test(PATH) ? Buffer.from(PATH.split`,`[1], 'base64') : /^https?:\/\//.test(PATH) ? await (res = await getBuffer(PATH)) : fs.existsSync(PATH) ? (filename = PATH, fs.readFileSync(PATH)) : typeof PATH === 'string' ? PATH : Buffer.alloc(0)
         //if (!Buffer.isBuffer(data)) throw new TypeError('Result is not a buffer')
@@ -697,7 +699,7 @@ return buffer
 
     }
       
-      XeonBotInc.sendFile = async (jid, path, filename = '', caption = '', quoted, ptt = false, options = {}) => {
+      JewelBotInc.sendFile = async (jid, path, filename = '', caption = '', quoted, ptt = false, options = {}) => {
   let type = await XeonBotInc.getFile(path, true);
   let { res, data: file, filename: pathFile } = type;
 
@@ -750,13 +752,13 @@ return buffer
     //console.error(e)
     m = null;
   } finally {
-    if (!m) m = await XeonBotInc.sendMessage(jid, { ...message, [mtype]: file }, { ...opt, ...options });
+    if (!m) m = await JewelBotInc.sendMessage(jid, { ...message, [mtype]: file }, { ...opt, ...options });
     file = null;
     return m;
   }
 }
 
-XeonBotInc.cMod = (jid, copy, text = '', sender = XeonBotInc.user.id, options = {}) => {
+JewelBotInc.cMod = (jid, copy, text = '', sender = XeonBotInc.user.id, options = {}) => {
         //let copy = message.toJSON()
 		let mtype = Object.keys(copy.message)[0]
 		let isEphemeral = mtype === 'ephemeralMessage'
@@ -782,7 +784,7 @@ XeonBotInc.cMod = (jid, copy, text = '', sender = XeonBotInc.user.id, options = 
         return proto.WebMessageInfo.fromObject(copy)
     }
 
-XeonBotInc.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '', options = {}) => {
+JewelBotInc.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '', options = {}) => {
         let types = await XeonBotInc.getFile(path, true)
            let { mime, ext, res, data, filename } = types
            if (res && res.status !== 200 || file.length <= 65536) {
@@ -803,11 +805,11 @@ XeonBotInc.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '
        else if (/video/.test(mime)) type = 'video'
        else if (/audio/.test(mime)) type = 'audio'
        else type = 'document'
-       await XeonBotInc.sendMessage(jid, { [type]: { url: pathFile }, caption, mimetype, fileName, ...options }, { quoted, ...options })
+       await JewelBotInc.sendMessage(jid, { [type]: { url: pathFile }, caption, mimetype, fileName, ...options }, { quoted, ...options })
        return fs.promises.unlink(pathFile)
        }
     
-    XeonBotInc.copyNForward = async (jid, message, forceForward = false, options = {}) => {
+    JewelBotInc.copyNForward = async (jid, message, forceForward = false, options = {}) => {
 let vtype
 if (options.readViewOnce) {
 message.message = message.message && message.message.ephemeralMessage && message.message.ephemeralMessage.message ? message.message.ephemeralMessage.message : (message.message || undefined)
@@ -841,13 +843,13 @@ await XeonBotInc.relayMessage(jid, waMessage.message, { messageId:  waMessage.ke
 return waMessage
 }
     
-    XeonBotInc.sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return XeonBotInc.sendMessage(jid, { poll: { name, values, selectableCount }}) }
+    JewelBotInc.sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return XeonBotInc.sendMessage(jid, { poll: { name, values, selectableCount }}) }
 
-XeonBotInc.parseMention = (text = '') => {
+JewelBotInc.parseMention = (text = '') => {
 return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')
 }
             
-    XeonBotInc.downloadMediaMessage = async (message) => {
+    JewelBotInc.downloadMediaMessage = async (message) => {
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
         const stream = await downloadContentFromMessage(message, messageType)
@@ -858,7 +860,7 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net'
 
         return buffer
     }
-    return XeonBotInc
+    return JewelBotInc
 }
 
 let file = require.resolve(__filename)
