@@ -1,10 +1,10 @@
 //base by Giddy Tennor 
 //re-upload? recode? copy code? give credit ya :)
-//YouTube: @https://youtube.com/@gideonowino-gc2ry?si=5zCh-IZzv_JBMUyp
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @Maldii14
-//WhatsApp: +254758732775
+//YouTube: @Giddy_Tennor
+//Instagram: Giddy_Tennor
+//Telegram: t.me/Giddy Tennor 
+//GitHub: @Tennormodz
+//WhatsApp: +254104245659
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@gideonowino-gc2ry?si=5zCh-IZzv_JBMUyp
 
 const fs = require('fs')
