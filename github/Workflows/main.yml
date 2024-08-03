@@ -32,4 +32,4 @@ jobs:
 
       - name: Docker Push
 
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/cheemsbot14oh
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/jewelbotoh
