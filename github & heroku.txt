@@ -3,7 +3,7 @@ commands to upload the bot to github using termux:
 
 cd /sdcard
 
-cd cheemsbot14(name of bot folder)
+cd Jewelbot(name of bot folder)
 
 git config  --global user.email "your github email"
 
