@@ -1,33 +1,33 @@
-//base by DGXeon
+//base by Giddy Tennor 
 //re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
+//YouTube: @https://youtube.com/@gideonowino-gc2ry?si=5zCh-IZzv_JBMUyp
 //Instagram: unicorn_xeon13
 //Telegram: t.me/xeonbotinc
 //GitHub: @Maldii14
 //WhatsApp: +254758732775
-//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
+//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@gideonowino-gc2ry?si=5zCh-IZzv_JBMUyp
 
 const fs = require('fs')
 const chalk = require('chalk')
 
 //owmner v card
-global.ytname = "YT: Maldii14" //ur yt chanel name
-global.socialm = "GitHub: Maldii14" //ur github or insta name
+global.ytname = "YT: Tennormodz" //ur yt chanel name
+global.socialm = "GitHub: Tennormodz" //ur github or insta name
 global.location = "Kenya, Nairobi, Nairobi" //ur location
 
 //new
 global.botname = 'M MD V1' //ur bot name
-global.ownernumber = '254758732775' //ur owner number
+global.ownernumber = '254104245659' //ur owner number
 global.ownername = 'MAK J' //ur owner name
-global.websitex = "https://whatsapp.com/channel/0029VaWrCuH35fLuVP2iCc2R"
+global.websitex = "https://whatsapp.com/channel/0029VadqmtNA89MlYOW7Ep2n"
 global.themeemoji = '🪀'
 global.wm = "M Bot Inc."
-global.botscript = 'https://github.com/Maldii14/cheemsbot14' //script link
+global.botscript = 'https://github.com/Tennormodz/Jewel' //script link
 global.packname = "Sticker By"
 global.author = "MAKJ\n\n+254758732775"
-global.creator = "254758732775@s.whatsapp.net"
+global.creator = "254104245659@s.whatsapp.net"
 global.xprefix = '*'
-global.premium = ["254758732775"] // Premium User
+global.premium = ["254104245659"] // Premium User
 global.hituet = 0
 
 //bot sett
@@ -43,10 +43,10 @@ global.groupevent = false //show update messages in group chat
 //msg
 global.mess = {
 	limit: 'Your limit is up!',
-	nsfw: 'Nsfw is disabled in this group, Please tell the admin to enable',
+	nsfw: 'Nsfw is disabled in this group, an admin must enable it',
     done: 'Done✓',
     error: 'Error!',
-    success: 'Here you go!'
+    success: 'nice for you!'
 }
 //thumbnail
 global.thumb = fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')
