@@ -1,6 +1,6 @@
 //base by Goddy (Jewel Bot Inc.)
 //YouTube: @GiddyTennor
-//Instagram: unicorn_xeon13
+//Instagram: Giddy_tennor
 //Telegram: t.me/GiddyTennor
 //GitHub: @Tennormodz
 //WhatsApp: +254104245659
