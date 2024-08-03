@@ -3,7 +3,7 @@
 //YouTube: @GiddyTennor
 //Instagram: giddy_tennor
 //Telegram: t.me/GiddyTennor
-//GitHub: @Tennormosz
+//GitHub: @Tennormodz
 //WhatsApp: +254104245659
 //want more free bot scripts? https://youtube.com/@gideonowino-gc2ry?si=5zCh-IZzv_JBMUyp
 
