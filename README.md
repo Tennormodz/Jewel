@@ -11,7 +11,7 @@
 - FORK THE REPOSITORY [Here](https://github.com/Tennormodz/Jewel/fork)
 
 ## `Generate Pair Code For Session`
-[![Jewel](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@GiddyTennor/Tennor-PairCode)
+[![Jewel](https://repl.it/badge/github/quiec/whatsasena)](https://replit.cohttps://replit.com/@DGXeon/Xeon-PairCode)
 
 ## ` BUILDPACKS`
 
