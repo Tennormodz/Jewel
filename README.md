@@ -20,8 +20,8 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)] by  Clicking the link below 
-(https://dashboard.heroku.com/new?template=https://github.com/Tennormodz/Jewel?tab=readme-ov-file)_]
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)]By Clicking the link below 
+_(https://dashboard.heroku.com/new?template=https://github.com/Tennormodz/Jewel?tab=readme-ov-file).***
 # Install Manually 👇
 ## `Requirements`
 * [Node.js](https://nodejs.org/en/)
