@@ -21,7 +21,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)]
-
+(https://dashboard.heroku.com/new?template=https://github.com/Tennormodz/Jewel?tab=readme-ov-file)_]
 # Install Manually 👇
 ## `Requirements`
 * [Node.js](https://nodejs.org/en/)
