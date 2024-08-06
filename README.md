@@ -5,6 +5,12 @@
 <a href="https://t.me/Giddy_Tennor"><img src="https://img.shields.io/badge/Telegram-00FFFF?style=for-the-badge&logo=telegram&logoColor=white" />
 <a href="[[[https://whatsapp.com/channel/0029VadqmtNA89MlYOW7Ep2n](https://whatsapp.com/channel/0029VaWrCuH35fLuVP2iCc2R)](https://whatsapp.com/channel/0029VaWrCuH35fLuVP2iCc2R)]"><img src="https://img.shields.io/badge/WhatsApp Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://www.instagram.com/giddy_tennor_?igsh=YzZ0NDRoaXFxM2Zk=="><img src="https://img.shields.io/badge/Instagram-A020F0?style=for-the-badge&logo=instagram&logoColor=white" />
+
+
+
+  <p align="center">
+<img src="https://telegra.ph/file/6df8affbde800234b9436.jpg" width="360" height="360"/>## ```<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=THANKS FOR CHOOSING +JEWEL-BOT; WHATSAPP+BUG+BOT;CREATED+BY+GIDDY+TENNOR;RELEASED+5.8.2024" alt="Typing SVG" /></a>
+    
 </p>
 # Setup For Deployment 👇
 
