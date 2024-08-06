@@ -13,6 +13,10 @@
 ## `Generate Pair Code For Session`
 [![Jewel](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Xeon-PairCode)
 
+
+
+
+[`Jewel Pairing Using Render`](https://classic-v3-session.onrender.com)
 ## ` BUILDPACKS`
 
 ```
