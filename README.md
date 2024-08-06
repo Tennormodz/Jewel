@@ -14,7 +14,7 @@
 </p>
 # Setup For Deployment 👇
 
-- FORK THE REPOSITORY [Here](https://github.com/Tennormodz/Jewel/fork)
+- <a href="https://github.com/Tennormodz/Jewel/fork"><img src="https://img.shields.io/badge/Fork%20My%20Repository-blue" alt="Fork my repository" width="300"></a>
 
 ## `Generate Pair Code For Session`
 [![Jewel](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Xeon-PairCode)
