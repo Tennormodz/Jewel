@@ -9,7 +9,7 @@
 
 
   <p align="center">
-<img src="https://telegra.ph/file/6df8affbde800234b9436.jpg" width="360" height="360"/>## ```<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=THANKS FOR CHOOSING +JEWEL-BOT; WHATSAPP+BUG+BOT;CREATED+BY+GIDDY+TENNOR;RELEASED+5.8.2024" alt="Typing SVG" /></a>
+<img src="https://telegra.ph/file/0f5c8ecc4fa05336be42d.jpg" width="360" height="360"/>## ```<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=THANKS FOR CHOOSING +JEWEL-BOT; WHATSAPP+BUG+BOT;CREATED+BY+GIDDY+TENNOR;RELEASED+5.8.2024" alt="Typing SVG" /></a>
     
 </p>
 # Setup For Deployment 👇
